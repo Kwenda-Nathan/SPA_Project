@@ -254,3 +254,14 @@ header{
 .login-register p a:hover {
     text-decoration: underline;
 }
+
+#result-box{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14pt;
+    color: hsl(0, 0%, 100%);
+    transition: opacity 0.5s ease-in-out;
+}
