@@ -61,6 +61,32 @@ header{
     transform: scaleX(1)
 }
 
+.container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+/*
 .navigation .btnLogin-popup{
     width: 130px;
     height: 50px;
@@ -117,17 +143,17 @@ header{
 } 
 
 .wrapper.active .form-box.login {
-    transform: translateX(-400px); /* Smooth transition applied */
+    transform: translateX(-400px); /* Smooth transition applied 
 }
 
 .wrapper .form-box.register {
     position: absolute;
-    transition: transform 0.18s ease; /* Ensure smooth transition */
+    transition: transform 0.18s ease; /* Ensure smooth transition 
     transform: translateX(400px);
 }
 
 .wrapper.active .form-box.register {
-    transform: translateX(0); /* Smooth transition applied */
+    transform: translateX(0); /* Smooth transition applied 
 }
 
 
@@ -265,3 +291,4 @@ header{
     color: hsl(0, 0%, 100%);
     transition: opacity 0.5s ease-in-out;
 }
+*/

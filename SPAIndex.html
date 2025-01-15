@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +9,31 @@
 </head>
 <body>
     <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/contact">Contact</a>
+        <h2 class="logo">EncryptionSim</h2>
+        <div class="navigation" id="main">
+            <a href="#/" class="home">Home</a>
+            <a href="#about" class="about">About</a>
+            <a href="#services" class="services">Services</a>
+            <a href="#contact" class="contact">Contact</a>
             <button class="btnLogin-popup">Login</button>
-        </nav>
+        </div>
     </header>
 
-    <div class="wrapper">
+    <main id="content">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+
+    <div class="container">
+        <h1>Caesar Cipher</h1>
+        <textarea id="inputText" rows="4" cols="40" placeholder="Enter text here..."></textarea><br>
+        <input type="number" id="shiftValue" placeholder="Shift value" /><br>
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+        <h2>Output:</h2>
+        <textarea id="outputText" rows="4" cols="40" readonly></textarea>
+    </div>
+
+   <!-- <div class="wrapper">
         <span class="icon-close"><ion-icon name="close"></ion-icon>
         </span>
         <div class="form-box login" id="login-div">
@@ -81,10 +96,10 @@
 
     <div id="result-box">
         <h3 id="result"></h3>
-    </div>
-
-    <script type="module" src="script.js"></script>
-    <script type="module" src="router.js"></script>
+    </div> -->
+    <script  src="script.js"></script>
+    <script  src="app.js"></script>
+    <!--<script type="module" src="router.js"></script>-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

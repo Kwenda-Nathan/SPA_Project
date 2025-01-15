@@ -1,11 +1,8 @@
-document.addEventListener("click", (e) => {
-    const {target} = e;
-    if (!target.matches("nav a") ) {
-        return;
-    }
-    e.preventDefault();
-    urlRoute();
-})
+document.addEventListener("DOMContentLoaded", () => {
+    urlLocationHandler();
+    window.addEventListener("hashchange", urlLocationHandler);
+});
+
 
 const urlRoutes ={
     404: {
@@ -18,32 +15,27 @@ const urlRoutes ={
         title: "",
         description: ""
     },
-    "/about": {
+    about: {
         template: "about.html",
         title: "",
         description: ""
     },
-    "/service": {
+    service: {
         template: "service.html",
         title: "",
         description: ""
     },
-    "/contact": {
+    contact: {
         template: "contact.html",
         title: "",
         description: ""
     }
 }
 
-const urlRoute = (event) =>{
-    event = event || window.event;
-    event.preventDefault();
-    window.history.pushState({}, "", event.target.href);
-    urlLocationHandler();
-}
+
 
 const urlLocationHandler = async () => {
-    const location = window.location.pathname;
+    var location = window.location.hash.replace("#", "");
     if(location.length == 0) {
         location = "/";
     }
@@ -54,7 +46,7 @@ const urlLocationHandler = async () => {
     document.getElementById("content").innerHTML = html;
 }
 
-window.onpopstate = urlLocationHandler;
-window.route = urlRoute;
+window.addEventListener("hashchange", urlLocationHandler);
+
 
 urlLocationHandler();

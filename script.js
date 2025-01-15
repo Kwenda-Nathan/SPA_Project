@@ -1,4 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+/*import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
@@ -146,3 +146,9 @@ btnPopup.addEventListener('click', ()=>{
 iconClose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-popup');
 });
+
+// Toggles for home and other buttons 
+const Home =document.querySelector('.home');
+const About =document.querySelector('.about');
+const Services =document.querySelector('.services');
+const Contact =document.querySelector('.contact'); */
