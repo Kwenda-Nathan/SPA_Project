@@ -7,7 +7,7 @@ const urlRoutes ={
         description: "The page you are looking for does not exist."
     },
     "/": {
-        template: "SPAIndex.html",
+        template: "app.html",
         title: "Home - EncryptionSim",
         description: "Welcome to EncryptionSim, a tool for learning about encryption."
     },
