@@ -6,27 +6,26 @@
 }
 
 body {
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
-    background: url(symencryption.webp) no-repeat;
+    background: url(symencryption.webp) no-repeat center center;
     background-size: cover;
-    
 }
 
-header{
+header {
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    /*background: hsl(0, 87%, 55%);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
+
 .logo{
     font-size: 2em;
     color: hsl(0, 0%, 100%);
@@ -62,45 +61,13 @@ header{
 }
 
 .main-container {
+    
     flex: 1; /* Makes the container take remaining vertical space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top */
     align-items: center; /* Center horizontally */
     padding: 20px;
+    top: 50px;
 }
-
-.content{
-    display: inline-block;
-    position: absolute;
-    top: 50; 
-    left: 50;
-}
-
-/*.container {
-    text-align: center;
-    padding: 20px;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }*/
-  input, textarea, button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-  }
-  button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
-
-
 

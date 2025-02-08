@@ -17,7 +17,7 @@ const urlRoutes ={
         description: "Learn more about EncryptionSim"
     },
     service: {
-        template: "templates/Service.html",
+        template: "templates/service.html",
         title: "Services - EncryptionSim",
         description: "Explore the services offered by EncryptionSim."
     },
