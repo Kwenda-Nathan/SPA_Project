@@ -1,0 +1,78 @@
+*{
+    font-family: Arial;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+form {
+    max-width: 550px;
+    width:  90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgb(2, 211, 211);
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 211, 211);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(2, 211, 211), rgb(100, 207, 207));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: rgb(40, 167, 69);
+}
