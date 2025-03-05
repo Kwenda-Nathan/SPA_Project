@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="caesar.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Caesar Cipher</h1>
-        <textarea id="inputText" rows="4" cols="40" placeholder="Enter text here..."></textarea><br>
-        <input type="number" id="shiftValue" placeholder="Shift value" /><br>
-        <button onclick="encryptText()">Encrypt</button>
-        <button onclick="decryptText()">Decrypt</button>
-        <h2>Output:</h2>
-        <textarea id="outputText" rows="4" cols="40" readonly></textarea>
+    <div class="center-container">
+        <div class="tool">
+            <h1>Caesar Cipher</h1>
+            <textarea id="inputText" rows="4" cols="40" placeholder="Enter text here..."></textarea><br>
+            <input type="number" id="shiftValue" placeholder="Shift value" /><br>
+            <button onclick="encryptText()">Encrypt</button>
+            <button onclick="decryptText()">Decrypt</button>
+            <button class="QR_Code_btn">Generate QR code</button>
+            <h2>Output:</h2>
+            <textarea id="outputText" class="out_text" rows="4" cols="40" readonly></textarea>
+        </div>
+
+        <div class="qr-canvas">
+            <h2>Your QR code</h2>
+            <div class="loader"></div>
+            <img src="" class="Qr_image">
+        </div>
     </div>
+    
     <script  src="app.js"></script>
+    <script defer src="scripts/QRcode.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 .dropdown{
     display: inline-block;
+    position: relative;
 }
 
 .dropdown button{
@@ -8,6 +9,8 @@
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
 }
 
 .dropdown a{
@@ -23,10 +26,17 @@
     background-color: hsl(0, 0%, 95%);
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    border-radius: 5px;
+    z-index: 1000;/* for appearing above other elements*/
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(5px);
 }
 
 .dropdown:hover .content{
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .dropdown:hover button{
@@ -42,7 +52,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url(encryption.webp) no-repeat center center;
     background-size: cover;
     /*padding-top: 80px;*/
 }

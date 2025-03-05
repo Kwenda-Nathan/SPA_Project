@@ -21,7 +21,7 @@ const urlRoutes = {
         title: "About - EncryptionSim",
         description: "Learn more about EncryptionSim",
         css: "styles/about.css",
-        js: "scripts/about.js"
+        
     },
     service: {
         template: "templates/service.html",
@@ -42,7 +42,7 @@ const urlRoutes = {
         title: "Caesar cipher",
         description: "Main application.",
         css: "app.css",
-        js: "app.js"
+        js: ["app.js","scripts/QRcode.js"]
     }
 };
 

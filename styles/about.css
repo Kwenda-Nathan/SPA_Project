@@ -58,3 +58,31 @@
 .about-item:hover hr{
     background-color: #fff;
 }
+
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 4ooms ease-in-out;
+}
+.col-md-4{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 40px;
+}
+
+footer{
+    background: #212226;
+    padding: 20px;
+    position: absolute;
+    float: right;
+}
+
+footer p{
+    color: #fff;
+}
+

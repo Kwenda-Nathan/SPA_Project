@@ -1,0 +1,72 @@
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: calc(100vh - 80px); /* Adjust height to fit below header */
+    width: 100%;
+    gap: 2rem;
+}
+
+.tool {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+
+.qr-canvas{
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+}
+
+/*QR Code loading */
+
+.loader {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 6px solid rgb(67, 212, 218);
+    border-top-color: white;
+    animation: spin 1s infinite;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+
+/*Here is the rotation animation*/
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
