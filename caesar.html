@@ -14,19 +14,30 @@
             <input type="number" id="shiftValue" placeholder="Shift value" /><br>
             <button onclick="encryptText()">Encrypt</button>
             <button onclick="decryptText()">Decrypt</button>
-            <button class="QR_Code_btn">Generate QR code</button>
+            <button class="Store_btn">Save</button>
             <h2>Output:</h2>
             <textarea id="outputText" class="out_text" rows="4" cols="40" readonly></textarea>
         </div>
-
-        <div class="qr-canvas">
-            <h2>Your QR code</h2>
-            <div class="loader"></div>
-            <img src="" class="Qr_image">
-        </div>
+    </div>
+    <div class="instructions">
+        <h1>User Instructions</h1>
+        <dl>
+            <dt>User input</dt>
+            <dd>- User should first enter plain text in the provided input text area</dd>
+            <dt>Select Shift value</dt>
+            <dd>- User should now select or input a valid shift value which is an integer</dd>
+            <dt>Encrypt text</dt>
+            <dd>- User should click on the encrypt button to encrypt the text</dd>
+            <dt>Encrypted text</dt>
+            <dd>- The encrypted text will be displayed in the output text area</dd>
+            <dt>Decrypt text</dt>
+            <dd>- User should click on the decrypt button to decrypt the text</dd>
+            <dt>Save</dt>
+            <dd>- User can save the encrypted or decrypted text by clicking on the save button</dd>
+        </dl>
     </div>
     
     <script  src="app.js"></script>
-    <script defer src="scripts/QRcode.js"></script>
+    
 </body>
 </html>

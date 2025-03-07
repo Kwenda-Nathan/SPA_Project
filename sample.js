@@ -42,7 +42,7 @@ const urlRoutes = {
         title: "Caesar cipher",
         description: "Main application.",
         css: "app.css",
-        js: ["app.js","scripts/QRcode.js"]
+        js: "app.js"
     }
 };
 

@@ -15,6 +15,7 @@ button{
     min-height: calc(100vh - 80px); /* Adjust height to fit below header */
     width: 100%;
     gap: 2rem;
+    margin-bottom: 0%;
 }
 
 .tool {
@@ -26,47 +27,32 @@ button{
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
+    margin-bottom: 0%;
 }
 
 button:hover{
     background-color: hsl(0, 0%, 70%);
 }
 
-.qr-canvas{
-    height: 15rem;
-    width: 15rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    border-radius: 1rem;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    padding: 1rem;
-    flex-direction: column;
-    position: relative;
-    gap: 1rem;
+.instructions h1{
+    color: rgb(255, 255, 255);
+    font-size: 210%;
+    margin-left: 3%;
 }
 
-/*QR Code loading */
-
-.loader {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    border: 6px solid rgb(67, 212, 218);
-    border-top-color: white;
-    animation: spin 1s infinite;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    display: none;
+.instructions dt{
+    color: rgb(230, 18, 18);
+    font-size: 180%;
+    margin-left: 5%;
 }
 
-/*Here is the rotation animation*/
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.instructions dd{
+    color: rgb(217, 57, 223);
+    font-size: 160%;
+    margin-left: 7%;
+}
+
+body{
+    background:url(encryption.webp) no-repeat center center;
+    background-size: cover;
 }
