@@ -5,13 +5,16 @@ const message = document.querySelector("#message");
 const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error");
 
-// validate data 
-function validateForm(){
-    
+// Attach event listener to form
+document.querySelector("#contactForm").addEventListener("submit", validateForm);
+
+// Validate form
+function validateForm(event){
+    event.preventDefault(); // Prevent form from submitting
     clearMessages();
     let errorFlag = false;
 
-    if(nameInput.ariaValueMax.length < 1){
+    if(nameInput.value.length < 1){
         errorNodes[0].innerText = "Name cannot be blank";
         nameInput.classList.add("error-border");
         errorFlag = true;
@@ -23,7 +26,7 @@ function validateForm(){
         errorFlag = true;
     }
 
-    if(message.value.length <1){
+    if(message.value.length < 1){
         errorNodes[2].innerText = "Message cannot be blank";
         message.classList.add("error-border");
         errorFlag = true;
@@ -34,20 +37,17 @@ function validateForm(){
     }
 }
 
-// clear error / success messages
+// Clear error/success messages
 function clearMessages(){
-    for(let i=0; i < errorNodes.length; i++){
-        errorNodes[i].innerText = "";
-    }
-
+    errorNodes.forEach(node => node.innerText = "");
     success.innerText = "";
     nameInput.classList.remove("error-border");
     email.classList.remove("error-border");
     message.classList.remove("error-border");
 }
 
-// check if email is valid
+// Check if email is valid
 function emailIsValid(email){
-    let pattern = /\s+@\s+\.\s+/;
+    let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
 }

@@ -65,14 +65,15 @@ input[type="submit"] {
     border-radius: 3px;
 }
 
+.error-border {
+    border: 2px solid red;
+}
 .error {
     color: red;
+    font-size: 14px;
 }
-
-.error-border {
-    border-bottom: 1px solid red;
-}
-
 #success {
-    color: rgb(40, 167, 69);
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
 }

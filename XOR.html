@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <label for="inputText">Enter Text:</label>
+        <input type="text" id="inputText" placeholder="Enter text here">
+        
+        <label for="key">Enter Key (Shift for Caesar, Character for XOR):</label>
+        <input type="text" id="key" placeholder="Enter key">
+        
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+        
+        <div class="output">
+            <h3>Output:</h3>
+            <p id="result"></p>
+            <h4>Binary Representation (XOR Only):</h4>
+            <pre id="binaryOutput"></pre>
+        </div>
+        
+    </div>
+</body>
+</html>

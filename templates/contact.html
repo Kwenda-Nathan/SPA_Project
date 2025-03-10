@@ -7,28 +7,26 @@
 </head>
 <body>
     <div id="overlay">
-        <form onsubmit="event.preventDefault(); validateForm()">
+        <form id="contactForm">
             <h1>Contact Us</h1>
 
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your name">
-            <small class="error"></small>
+            <small class="error"></small> <!-- Error message for name -->
 
             <label for="email">Email</label>
             <input type="text" id="email" placeholder="Your email">
-            <small class="error"></small>
+            <small class="error"></small> <!-- Error message for email -->
 
             <label for="message">Message</label>
-            <textarea  id="message" placeholder="Your message" rows="7"></textarea>
-            <small class="error"></small>
+            <textarea id="message" placeholder="Your message" rows="7"></textarea>
+            <small class="error"></small> <!-- Error message for message -->
 
             <div class="center">
-
                 <input type="submit" value="Send Message">
-                <p id="success"></p>
+                <p id="success"></p> <!-- Success message -->
             </div>
         </form>
-
     </div>
 </body>
 </html>

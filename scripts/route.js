@@ -35,14 +35,21 @@ const urlRoutes = {
         title: "Contact - EncryptionSim",
         description: "Get in touch with the EncryptionSim team.",
         css: "styles/contact.css",
-        js: "contact.js"
+        js: "scripts/contact.js"
     },
     Caesar: {
         template: "caesar.html",
         title: "Caesar cipher",
         description: "Main application.",
         css: "app.css",
-        js: "app.js"
+        js: "scripts/app.js"
+    },
+    XOR: {
+        template: "XOR.html",
+        title: "Caesar cipher",
+        description: "Main application.",
+        css: "app.css",
+        js: "scripts/app.js"
     }
 };
 
