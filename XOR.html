@@ -6,24 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container_XOR">
 
-        <label for="inputText">Enter Text:</label>
-        <input type="text" id="inputText" placeholder="Enter text here">
+        <div class="tool_XOR">
+
+            <label for="inputText">Enter Text:</label><br>
+            <input type="text" id="inputText" placeholder="Enter text here"><br>
         
-        <label for="key">Enter Key (Shift for Caesar, Character for XOR):</label>
-        <input type="text" id="key" placeholder="Enter key">
+            <label for="key">Enter Key (Character for XOR):</label>
+            <input type="text" id="key" placeholder="Enter key"><br>
         
-        <button onclick="encryptText()">Encrypt</button>
-        <button onclick="decryptText()">Decrypt</button>
+            <button onclick="encryptXORText()">Encrypt</button>
+            <button onclick="decryptXORText()">Decrypt</button>
         
-        <div class="output">
-            <h3>Output:</h3>
-            <p id="result"></p>
-            <h4>Binary Representation (XOR Only):</h4>
-            <pre id="binaryOutput"></pre>
+            <div class="output">
+                <h3>Output:</h3>
+                <p id="result"></p>
+                <h4>Binary Representation (XOR Only):</h4>
+                <pre id="binaryOutput"></pre>
+            </div>
+
         </div>
-        
+
     </div>
 </body>
 </html>

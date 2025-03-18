@@ -34,6 +34,16 @@ button:hover{
     background-color: hsl(0, 0%, 70%);
 }
 
+.instructions{
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ddd;
+    
+}
+
 .instructions h1{
     color: rgb(255, 255, 255);
     font-size: 210%;

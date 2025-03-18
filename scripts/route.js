@@ -46,10 +46,10 @@ const urlRoutes = {
     },
     XOR: {
         template: "XOR.html",
-        title: "Caesar cipher",
+        title: "XORS cipher",
         description: "Main application.",
-        css: "app.css",
-        js: "scripts/app.js"
+        css: "styles/XOR.css",
+        js: "scripts/XOR.js"
     }
 };
 

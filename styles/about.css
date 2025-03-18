@@ -1,39 +1,43 @@
-.about-1{
+.about-1 {
     margin: 30px;
     padding: 5px;
 }
 
-.about-1 h1{
+.about-1 h1 {
     text-align: center;
     color: black;
     font-weight: bold;
 }
 
-.about-1 p{
+.about-1 p {
     text-align: center;
     padding: 3px;
-    color: #fff;
+    color: #333; /* Darker text for better visibility */
 }
 
-.about-item{
+.about-item {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: white;
-    padding: 80px, 30px;
-    box-shadow: 0 0 9px rgba(0,0,0 .6);
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: all 400ms ease-in-out;
 }
 
-.about-item i{
-    font-size: 255px;
-    margin: 0;
+.about-item i {
+    font-size: 50px; /* Adjusted icon size */
+    margin-bottom: 10px;
+    color: #5fbff9;
+    transition: all 300ms ease-in-out;
 }
 
-.about-item h3{
+.about-item h3 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.about-item hr{
+.about-item hr {
     width: 46px;
     height: 3px;
     background-color: #5fbff9;
@@ -41,48 +45,46 @@
     border: none;
 }
 
-.about-item p{
+.about-item p {
     margin-top: 20px;
 }
 
-.about-item:hover{
+/* Hover Effects */
+.about-item:hover {
     background-color: #5fbff9;
+    color: #fff;
 }
 
 .about-item:hover i,
 .about-item:hover h3,
-.about-item:hover p{
+.about-item:hover p {
     color: #fff;
 }
 
-.about-item:hover hr{
+.about-item:hover hr {
     background-color: #fff;
 }
 
-.about-item:hover i{
-    transform: translateY(-20px);
+.about-item:hover i {
+    transform: translateY(-10px);
 }
 
-.about-item:hover i,
-.about-item:hover h3,
-.about-item:hover hr{
-    transition: all 4ooms ease-in-out;
-}
-.col-md-4{
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin: 40px;
+.col-md-4 {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin: 20px auto;
 }
 
-footer{
+/* Footer */
+footer {
     background: #212226;
     padding: 20px;
-    position: absolute;
-    float: right;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
-footer p{
+footer p {
     color: #fff;
 }
-

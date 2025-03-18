@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: #007bff;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.service-card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA Section */
+.cta {
+    background: #007bff;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.cta h2 {
+    font-size: 28px;
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
