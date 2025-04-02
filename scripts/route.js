@@ -1,8 +1,3 @@
-/*
-in this js i am sampling how i can improve the page routing so that when i open different html pages it will 
-load the necessary css and js files that align with the page functionality
-*/
-
 const urlRoutes = {
     404: {
         template: "templates/404.html",
@@ -28,7 +23,7 @@ const urlRoutes = {
         title: "Services - EncryptionSim",
         description: "Explore the services offered by EncryptionSim.",
         css: "styles/service.css",
-        js: "scripts/service.js"
+        js: ""
     },
     contact: {
         template: "templates/contact.html",
@@ -49,7 +44,14 @@ const urlRoutes = {
         title: "XORS cipher",
         description: "Main application.",
         css: "styles/XOR.css",
-        js: "scripts/XOR.js"
+        js: "scripts/app.js"
+    },
+    Stash: {
+        template: "Stash.html",
+        title: "saved data",
+        description: "storage unit.",
+        css: "styles/stash.css",
+        js: "scripts/app.js"
     }
 };
 
@@ -107,16 +109,30 @@ function updateStyles(cssFile) {
     }
 }
 
-// Function to dynamically load and replace JavaScript files
 function updateScripts(jsFile) {
     let existingScript = document.getElementById("dynamic-script");
-    if (existingScript) existingScript.remove(); // Remove old JS
+    if (existingScript) existingScript.remove(); // Remove old script
 
     if (jsFile) {
         let newScript = document.createElement("script");
         newScript.id = "dynamic-script";
-        newScript.src = jsFile; // Load new JavaScript
+        newScript.src = jsFile;
         newScript.defer = true;
+        newScript.onload = () => {
+            console.log(`Loaded script: ${jsFile}`);
+
+            // Ensure loadSavedData runs only on the Stash page
+            if (jsFile.includes("app.js") && window.location.hash.toLowerCase().includes("stash")) {
+                setTimeout(() => {
+                    if (typeof loadSavedData === "function") {
+                        console.log("Calling loadSavedData()");
+                        loadSavedData();
+                    } else {
+                        console.error("loadSavedData function not found.");
+                    }
+                }, 500); // Increased delay to ensure DOM readiness
+            }
+        };
         document.body.appendChild(newScript);
     }
 }

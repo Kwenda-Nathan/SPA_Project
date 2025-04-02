@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Page Title */
+h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Container for Saved Data */
+#savedDataContainer, 
+#savedXORContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Individual Entry Styling */
+#savedDataContainer div,
+#savedXORContainer div {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Strong text for labels */
+strong {
+    color: #007BFF;
+}
+
+/* Delete Button */
+button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c82333;
+}
+
+/* Clear All Button */
+button:last-of-type {
+    background: #007BFF;
+}
+
+button:last-of-type:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #savedDataContainer, #savedXORContainer {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+}
