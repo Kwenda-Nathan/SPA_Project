@@ -24,19 +24,19 @@ To run CryptoSim, simply clone the repository and execute the appindex.html and 
 7. View or delete saved data as needed
 
 ## Caesar Cipher explanation 
-simple explanation with letters A to G
-0 1 2 3 4 5 6  <= shift values                                  2 3 4 5 6 0 1  
-                                  => select 2 as shift value 
-A B C D E F G  <= plain text                                    A B C D E F G
+simple explanation with letters A to G <br>
+0 1 2 3 4 5 6 | <= shift values |                                | 2 3 4 5 6 0 1 <br> 
+                               => select 2 as shift value      | <br> 
+A B C D E F G | <= plain text   |                                | A B C D E F G  <br>
 
 you see after selecting shift value as 2 A is now represented by C and so on
 
 ## XOR Cipher explanation 
-Example C as our plain text and K as our key so we need the binary values of the characters so that we XOR them
+Example C as our plain text and K as our key so we need the binary values of the characters so that we XOR them <br>
 
-C => 0 1 0 0 0 0 1 1 
-XOR
-K => 0 1 0 0 1 0 1 1
+C => 0 1 0 0 0 0 1 1 <br>
+XOR <br>
+K => 0 1 0 0 1 0 1 1 <br>
 out=>0 0 0 0 1 0 0 0 => this is going to be the final output what it is doing is that where ever we have same binary
 values for example 1 and 1 or 0 and 0 the XOR out is always 0 and for different binary value it is always 1
 but for this project the out put has been limited to ASCII printable characters (character code 32-127)
